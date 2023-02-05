@@ -9,9 +9,10 @@ x= numero-chute
 tentativas=3
 rodada=1
 while(rodada <= tentativas):
-    print("Tentativa", rodada, "de", tentativas, sep=" ")
+    print("Tentativa {} de {}".format(rodada, tentativas))
     if (x==0):
         print("Parabéns, você acertou!!")
+        print("Fim de jogo.")
         rodada=5
     elif(x!=0):
         if(x<0):
