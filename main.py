@@ -7,13 +7,15 @@ print("Você digitou:", chute_str)
 chute=int(chute_str)
 x= numero-chute
 tentativas=3
-rodada=1
-while(rodada <= tentativas):
+#rodada=1
+#while(rodada <= tentativas):
+for (rodada) in range(1,tentativas+1):
     print("Tentativa {} de {}".format(rodada, tentativas))
     if (x==0):
         print("Parabéns, você acertou!!")
         print("Fim de jogo.")
-        rodada=5
+        break #serve para acabar com o loop do for
+        #rodada=5
     elif(x!=0):
         if(x<0):
                 print("O seu chute foi maior que o numero secreto")
@@ -24,4 +26,4 @@ while(rodada <= tentativas):
         print("Você digitou:", chute_str)
         chute = int(chute_str)
         x = numero - chute
-        rodada= rodada + 1
+       # rodada= rodada + 1
