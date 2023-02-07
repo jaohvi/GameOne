@@ -1,7 +1,12 @@
+import random
+
 print("***************")
 print("BEM VINDO PARA ADIVINHAR")
 print("***************")
-numero=65
+
+#numero=round(random.random()*100) #random gera entre 0.0 e 1.0
+numero= random.randrange(1,101)
+print(numero)
 tentativas=3
 #rodada=1
 #while(rodada <= tentativas):
