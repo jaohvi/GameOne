@@ -3,11 +3,19 @@ import random
 print("***************")
 print("BEM VINDO PARA ADIVINHAR")
 print("***************")
-
+print ("Qual nível de dificuldade?")
+print("Sendo: (1) Fácil (2) Médio (3) Díficil")
+nivel=int(input("Digite o nível: "))
 #numero=round(random.random()*100) #random gera entre 0.0 e 1.0
 numero= random.randrange(1,101)
 print(numero)
-tentativas=3
+if(nivel==1):
+    tentativas= 20
+elif(nivel==2):
+    tentativas=10
+else:
+    tentativas=3
+
 #rodada=1
 #while(rodada <= tentativas):
 for (rodada) in range(1,tentativas+1):
